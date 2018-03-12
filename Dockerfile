@@ -5,7 +5,7 @@ FROM debian:latest
 MAINTAINER Patrick Flaig
 
 RUN apt-get update
-RUN apt-get install -no-install-recommends -y git wget make libncurses-dev flex bison gperf python python-serial
+RUN apt-get --no-install-recommends install -y git wget make libncurses-dev flex bison gperf python python-serial
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /home/esp
